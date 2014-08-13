@@ -1,0 +1,35 @@
+{
+  "name": "tinyblog",
+  "version": "0.1.0",
+  "description": "a really tiny website engine for publishing articles",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "js-yaml": "^3.1.0",
+    "uuid": "^1.4.1",
+    "when": "^3.4.3"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rkaw92/tinyblog.git"
+  },
+  "keywords": [
+    "blog",
+    "web",
+    "articles",
+    "markdown",
+    "personal",
+    "website"
+  ],
+  "author": "Robert Kawecki <robert+npm@rkaw.pl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rkaw92/tinyblog/issues"
+  }
+}
