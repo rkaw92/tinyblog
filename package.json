@@ -6,6 +6,7 @@
   "dependencies": {
     "colors": "^0.6.2",
     "js-yaml": "^3.1.0",
+    "juicer": "^0.6.6-stable",
     "uuid": "^1.4.1",
     "when": "^3.4.3"
   },
