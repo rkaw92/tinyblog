@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>rkaw.pl :: blog index</title>
+	</head>
+	<body>
+		{@each posts as post}
+		<article class="pl.rkaw.blog.PostBrief">
+			<a href="/posts/${post.ID.ID}"><h1>${post.title}</h1></a>
+			<span class="pl.rkaw.blog.PostMeta">${post.date}</span>
+			<h2>${post.paragraphs[0].headline}</h2>
+			<p>${post.paragraphs[0].content}</p>
+		</article>
+		{@/each}
+	</body>
+</html>

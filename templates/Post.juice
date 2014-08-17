@@ -4,11 +4,13 @@
 		<title>${title} :: blog post</title>
 	</head>
 	<body>
-		<h1>${title}</h1>
-		<h2>[by: ${author}] [on: ${date}]</h2>
-		{@each paragraphs as paragraph}
-			<h3>${paragraph.headline}</h3>
-			<p>${paragraph.content}</p>
-		{@/each}
+		<article class="pl.rkaw.blog.Post">
+			<h1>${title}</h1>
+			<h2>[by: ${author}] [on: ${date}]</h2>
+			{@each paragraphs as paragraph}
+				<h3>${paragraph.headline}</h3>
+				<p>${paragraph.content}</p>
+			{@/each}
+		</article>
 	</body>
 </html>
