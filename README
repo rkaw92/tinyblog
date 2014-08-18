@@ -1,0 +1,33 @@
+# tinyblog, a frugal weblog engine
+
+`tinyblog` is my personal hobby project. Its aim is to create a truly minimal blog engine which can be operated by an administrator using common file-management tools (by default), while allowing easy expansion.
+Similar in spirit to [nanoblogger](http://nanoblogger.sourceforge.net), but vastly different in its architecture and implementation, it strives to depend on very little and be simple to use.
+
+## Goals
+
+* Simplicity of design
+* Elegant code structure with a clear separation of concerns
+* Quality-assured code with strict invariant keeping
+* Few or no dependencies wherever possible
+* Portability to different back-ends and template engines
+* Performance
+
+## Features
+
+The following features are currently supported:
+* Post loading via a Repository
+	* File storage backend (fs)
+	* In-memory static index backend (Object); refreshing requires process restart for now
+	* Automatic index population upon startup
+* Single post view
+* Post index/listing
+* Lightweight, fast templating via [Juicer](http://juicer.name/)
+* A basic, ad-hoc RegExp route system
+
+On the roadmap for the near future are:
+* Static file serving support (images, stylesheets)
+* Proper request routing tree and handler registration API
+* Module injection system for the BlogEngine component
+* Pagination
+* Text and range-based search/filtering (via a Repository)
+* In-line comment/discussion system (user annotations?)
